@@ -1,8 +1,0 @@
-.cardHover {
-    transition: transform 0.2s;
-    cursor: pointer;
-}
-
-.cardHover:hover {
-    transform: scale(1.1);
-}

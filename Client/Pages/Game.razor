@@ -1,0 +1,69 @@
+﻿@page "/game"
+@page "/game/{id:int}"
+@inject IGameService GameService
+
+@if (Id == null)
+{
+    <PageTitle>Create a new Game</PageTitle>
+    <h3>Create a new Game</h3>
+}
+else
+{
+    <PageTitle>Edit @game.Name</PageTitle>
+    <h3>Edit @game.Name</h3>
+}
+
+<EditForm Model="game" OnSubmit="HandleSubmit">
+    <div>
+        <label for="game">Name</label>
+        <InputText id="game" @bind-Value="game.Name" class="form-control"></InputText>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">@btnText</button>
+    <button type="button" class="btn btn-danger" @onclick="DeleteGame">Delete Game</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    string btnText = string.Empty;
+
+    GamePlatform.Shared.Game game = new GamePlatform.Shared.Game();
+
+    protected override async Task OnInitializedAsync()
+    {
+        btnText = Id == null ? "Save New Hero" : "Update Hero";
+        @* await SuperHeroService.GetComics(); *@
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Id == null)
+        {
+            @* hero.Comic = SuperHeroService.Comics[0];
+            hero.ComicId = hero.Comic.Id; *@
+        }
+        else
+        {
+            game = await GameService.GetSingleGame((int)Id);
+        }
+    }
+
+    async Task HandleSubmit()
+    {
+        if (Id == null)
+        {
+            await GameService.CreateGame(game);
+        }
+        else
+        {
+            await GameService.UpdateGame(game);
+        }
+    }
+
+    async Task DeleteGame()
+    {
+        await GameService.DeleteGame(game.Id);
+    }
+}
