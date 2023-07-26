@@ -1,0 +1,57 @@
+﻿@page "/playstation4"
+@inject HttpClient Http
+
+<PageTitle>PlayStation 4 Games</PageTitle>
+
+<h1 class="text-center">Playstation 4 Games</h1>
+
+@if (Game == null)
+{
+    <p>Loading....</p>
+}
+else
+{
+    <div class="container text-center">
+        <div class="row">
+            @foreach (var game in Game.Results)
+            {
+                <div class="col">
+                    <div class="card cardHover mb-3" style="width: 18rem; height: 18rem;">
+                        <img src="@game.Image" alt="@game.Name" class="card-img-top border border-3" style="height: 10rem;">
+                        <div class="card-body">
+                            <h5>@game.Name</h5>
+                            @foreach (var g in game.Genre)
+                            {
+                                <p style="display: inline-block;" class="me-2">@g.Name </p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+
+
+
+
+
+@code {
+    private Games? Game = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var res = await Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2&platforms=18");
+        if (res.IsSuccessStatusCode)
+        {
+            Game = await res.Content.ReadFromJsonAsync<Games>();
+        }
+        else
+        {
+            Game = null;
+        }
+    }
+
+
+}
