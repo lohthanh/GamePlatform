@@ -9,57 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GamePlatform
 build_property.RootNamespace = GamePlatform
-build_property.ProjectDir = C:\Users\lohth\OneDrive\Desktop\CodingDojo\Projects\GamePlatform\
+build_property.ProjectDir = C:\Users\danny\Documents\dev\GamePlatform\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lohth\OneDrive\Desktop\CodingDojo\Projects\GamePlatform
+build_property.MSBuildProjectDirectory = C:\Users\danny\Documents\dev\GamePlatform
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lohth/OneDrive/Desktop/CodingDojo/Projects/GamePlatform/App.razor]
+[C:/Users/danny/Documents/dev/GamePlatform/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lohth/OneDrive/Desktop/CodingDojo/Projects/GamePlatform/Pages/Index.razor]
+[C:/Users/danny/Documents/dev/GamePlatform/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lohth/OneDrive/Desktop/CodingDojo/Projects/GamePlatform/Pages/NintendoSwitch.razor]
+[C:/Users/danny/Documents/dev/GamePlatform/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/danny/Documents/dev/GamePlatform/Pages/NintendoSwitch.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmludGVuZG9Td2l0Y2gucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lohth/OneDrive/Desktop/CodingDojo/Projects/GamePlatform/Pages/PC.razor]
+[C:/Users/danny/Documents/dev/GamePlatform/Pages/PC.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lohth/OneDrive/Desktop/CodingDojo/Projects/GamePlatform/Pages/Playstation4.razor]
+[C:/Users/danny/Documents/dev/GamePlatform/Pages/Playstation4.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheXN0YXRpb240LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lohth/OneDrive/Desktop/CodingDojo/Projects/GamePlatform/Pages/XboxOne.razor]
+[C:/Users/danny/Documents/dev/GamePlatform/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/danny/Documents/dev/GamePlatform/Pages/XboxOne.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcWGJveE9uZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lohth/OneDrive/Desktop/CodingDojo/Projects/GamePlatform/Shared/SurveyPrompt.razor]
+[C:/Users/danny/Documents/dev/GamePlatform/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lohth/OneDrive/Desktop/CodingDojo/Projects/GamePlatform/_Imports.razor]
+[C:/Users/danny/Documents/dev/GamePlatform/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lohth/OneDrive/Desktop/CodingDojo/Projects/GamePlatform/Shared/MainLayout.razor]
+[C:/Users/danny/Documents/dev/GamePlatform/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-g7tc52f24v
 
-[C:/Users/lohth/OneDrive/Desktop/CodingDojo/Projects/GamePlatform/Shared/NavMenu.razor]
+[C:/Users/danny/Documents/dev/GamePlatform/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-v8loa0p2ex
 
-[C:/Users/lohth/OneDrive/Desktop/CodingDojo/Projects/GamePlatform/Pages/Error.cshtml]
+[C:/Users/danny/Documents/dev/GamePlatform/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lohth/OneDrive/Desktop/CodingDojo/Projects/GamePlatform/Pages/_Host.cshtml]
+[C:/Users/danny/Documents/dev/GamePlatform/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

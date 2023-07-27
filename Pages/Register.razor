@@ -1,0 +1,64 @@
+@page "/register"
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject ILocalStorageService LocalStorage
+
+<EditForm Model="user" OnValidSubmit="SubmitRegistration">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="username">First Name</label>
+        <InputText id="first-name" @bind-Value="user.FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="username">Last Name</label>
+        <InputText id="last-name" @bind-Value="user.LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="username">Email</label>
+        <InputText id="email" @bind-Value="user.Email" type="email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <InputText id="password" @bind-Value="user.Password" type="password" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="password">Confirm Password</label>
+        <InputText id="password" @bind-Value="user.PasswordConfirm" type="password" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary my-3">Sign Up</button>
+
+    @if (errorMessage != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @errorMessage
+        </div>
+    }
+</EditForm>
+
+@code {
+    private User user = new User();
+    private string errorMessage;
+
+    private async Task SubmitRegistration()
+    {
+        HttpResponseMessage result = null;
+        
+        try
+        {
+            result = await Http.PostAsJsonAsync("http://localhost:5088/api/users/register", user);
+            result.EnsureSuccessStatusCode();
+            
+            Navigation.NavigateTo("/login");
+            
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+            errorMessage = result is null || !result.IsSuccessStatusCode ? "Invalid username or password." : "An unknown error occurred.";
+        }
+    }
+}
