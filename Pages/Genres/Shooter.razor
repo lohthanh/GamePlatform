@@ -1,11 +1,11 @@
-﻿@page "/"
+@page "/shooter"
 @inject HttpClient Http
 @inject IJSRuntime JsRuntime
-@inject NavigationManager NavigationManager
 
-<PageTitle>Index</PageTitle>
 
-<h1 class="text-center mb-5 mt-3">Welcome</h1>
+<PageTitle>Shooter Games</PageTitle>
+
+<h1 class="mb-5 text-center" id="top">Shooter Games</h1>
 
 @if (Game == null)
 {
@@ -14,9 +14,9 @@
 else
 {
     <div class="container text-center">
-        <div class="mb-4 fs-5">
+        <div class="mb-4">
             <label for="platformOption">Platforms</label>
-            <select style="width: 11.5rem;" class="ps-1 selectBar" name="platformOption" id="platformOption"
+            <select style="width: 9rem;" class="ps-1 selectBar" name="platformOption" id="platformOption"
             @onchange="HandlePlatformSelection">
                 <option value="">Select Platform</option>
                 <option value="&platforms=4">PC</option>
@@ -32,12 +32,11 @@ else
                     <div class="card cardHover mb-3" style="width: 18rem; height: 18rem;">
                         <img src="@game.Image" alt="@game.Name" class="card-img-top border border-3" style="height: 10rem;">
                         <div class="card-body">
-                        <h5 > <a style="color: rebeccapurple;" href="/game/@game.Id">@game.Name</a></h5>
+                            <h5>@game.Name</h5>
                             @foreach (var g in game.Genre)
                             {
                                 <p style="display: inline-block;" class="me-2">@g.Name </p>
                             }
-                            <button @onclick="() => PostGameToUserList(game.Id)">@game.Id</button>
                         </div>
                     </div>
                 </div>
@@ -50,10 +49,10 @@ else
                     <div class="card cardHover mb-3" style="width: 18rem; height: 18rem;">
                         <img src="@game.Image" alt="@game.Name" class="card-img-top border border-3" style="height: 10rem;">
                         <div class="card-body">
-                            <h5><a style="color: rebeccapurple;" href="/game/@game.Id">@game.Name</a></h5>
+                            <h5>@game.Name</h5>
                             @foreach (var g in game.Genre)
                             {
-                                <p style="display: inline-block;" class="me-2">@g.Name</p>
+                                <p style="display: inline-block;" class="me-2">@g.Name </p>
                             }
                         </div>
                     </div>
@@ -68,24 +67,21 @@ else
         <button class="btn-lg button" @onclick="LoadMore">Load More</button>
     }
     <button @onclick="ScrollToTop" class="btn-lg button ms-3">Back to the Top</button>
+
 </div>
+
 
 
 @code {
     private Games? Game = null;
     private List<GameResults> GamesList = new List<GameResults>();
     private string? nextPage;
+    private ElementReference topElementRef;
     private string? platformOption;
-
 
     protected override async Task OnInitializedAsync()
     {
-<<<<<<< HEAD
-        var res = await Http.GetAsync($"https://api.rawg.io/api/games?key=0c67fba6f9b144eabd29a7e85c06e2f5");
-=======
-        var res = await
-        Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2");
->>>>>>> origin/Thanh's-Branch
+        var res = await Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2&genres=2");
         if (res.IsSuccessStatusCode)
         {
             Game = await res.Content.ReadFromJsonAsync<Games>();
@@ -115,15 +111,9 @@ else
         }
     }
 
-<<<<<<< HEAD
-    private async void PostGameToUserList(int gameId) {
-        Console.WriteLine(gameId);
-        await Http.PostAsJsonAsync($"http://localhost:5088/api/users/games", new { gameId = gameId  });
-=======
     private async Task FetchPlatforms()
     {
-        string url =
-        "https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2";
+        string url = "https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2&genres=4";
         var res = await Http.GetAsync($"{url}{platformOption}");
         if (res.IsSuccessStatusCode)
         {
@@ -149,7 +139,6 @@ else
         }
 
         await FetchPlatforms();
->>>>>>> origin/Thanh's-Branch
     }
 
     private async void ScrollToTop()

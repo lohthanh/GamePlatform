@@ -1,0 +1,61 @@
+﻿@page "/game/{Id:int}"
+@inject HttpClient Http
+@inject IJSRuntime JsRuntime
+@inject NavigationManager NavigationManager
+
+<PageTitle>View Game Details</PageTitle>
+
+<h1 class="text-center mb-5 mt-3">@OneGame?.Name</h1>
+
+@if (OneGame == null)
+{
+    <h1>Loading....</h1>
+}
+else
+{
+    <div class="image-container" style="@ImageContainerStyle">
+        <div class="container div-container text-center">
+            <div>
+                <h4>Genres:</h4>
+                @foreach (var genre in OneGame.Genre)
+                {
+                    <p style="display: inline-block;" class="me-3">@genre.Name</p>
+                }
+            </div>
+            <p><a href="@OneGame.Website" target="_blank">@OneGame.Website</a></p>
+        </div>
+    </div>
+}
+
+@code {
+    private Games? Game = null;
+
+    private bool showScrollButton = false;
+
+    private Game? OneGame;
+
+    [Parameter]
+    public int Id { get; set; }
+    private string ImageContainerStyle => $"background-image: url('{OneGame?.Image}');";
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var res = await
+        Http.GetAsync($"https://api.rawg.io/api/games/{Id}?key=9cdb4d324c4a4643bb3d48d32b5884b2");
+        if (res.IsSuccessStatusCode)
+        {
+            OneGame = await res.Content.ReadFromJsonAsync<Game>();
+        }
+        else
+        {
+            OneGame = null;
+        }
+    }
+
+    private async void ScrollToTop()
+    {
+        await JsRuntime.InvokeVoidAsync("OnScrollEvent");
+    }
+}

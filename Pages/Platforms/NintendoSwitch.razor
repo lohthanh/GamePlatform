@@ -1,5 +1,6 @@
 @page "/nintendoswitch"
 @inject HttpClient Http
+@inject IJSRuntime JsRuntime
 
 
 <PageTitle>Nintendo Switch Games</PageTitle>
@@ -8,7 +9,7 @@
 
 @if (Game == null)
 {
-    <p>Loading....</p>
+    <h1>Loading....</h1>
 }
 else
 {
@@ -52,9 +53,10 @@ else
 <div class="text-center mb-5 mt-3">
     @if (nextPage != null || Game?.Next != null)
     {
-        <button class="btn-lg btn-primary" @onclick="LoadMore">Load More</button>
+        <button class="btn-lg button" @onclick="LoadMore">Load More</button>
     }
-    
+    <button @onclick="ScrollToTop" class="btn-lg button ms-3">Back to the Top</button>
+
 </div>
 
 
@@ -94,5 +96,10 @@ else
                 Game = null;
             }
         }
+    }
+
+    private async void ScrollToTop()
+    {
+        await JsRuntime.InvokeVoidAsync("OnScrollEvent");
     }
 }
