@@ -7,6 +7,7 @@ using System.Security.Claims;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using System;
+using Microsoft.AspNetCore.Authorization;
 
 using GamePlatform.Models;
 
@@ -24,41 +25,6 @@ namespace GamePlatform.Controllers
             _logger = logger;
             db = context;
         }
-
-        // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        // public IActionResult Error()
-        // {
-        //     return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        // }
-
-
-
-        // [HttpPost("register")]
-        // public IActionResult Register(User newUser)
-        // {
-        //     if (ModelState.IsValid)
-        //     {
-        //         if (db.Users.Any(u => u.Email == newUser.Email))
-        //         {
-        //             ModelState.AddModelError("Email", "Email is already in use!");
-        //             return View("Register");
-        //         }
-        //         else
-        //         {
-        //             PasswordHasher<User> Hasher = new PasswordHasher<User>();
-        //             newUser.Password = Hasher.HashPassword(newUser, newUser.Password);
-
-        //             db.Add(newUser);
-        //             db.SaveChanges();
-        //             HttpContext.Session.SetInt32("uid", newUser.UserId);
-        //             return RedirectToAction("Success");
-        //         }
-        //     }
-        //     else
-        //     {
-        //         return View("Index");
-        //     }
-        // }
 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginUser userSubmission)
@@ -78,12 +44,14 @@ namespace GamePlatform.Controllers
                 {
                     return Unauthorized("Invalid Email/Password");
                 }
-                
+
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {
                     Subject = new ClaimsIdentity(new Claim[]
                     {
-                        new Claim("UserID", userInDb.Id.ToString())
+                        new Claim("UserID", userInDb.Id.ToString()),
+                        new Claim("FirstName", userInDb.FirstName),
+                        new Claim("LastName", userInDb.LastName),
                     }),
                     Expires = DateTime.UtcNow.AddDays(1),
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourSecretKeyHere way too many secrets")), SecurityAlgorithms.HmacSha256Signature)
@@ -129,6 +97,32 @@ namespace GamePlatform.Controllers
             {
                 return BadRequest(ModelState);
             }
+        }
+
+        [Authorize]
+        [HttpPost("games")]
+        public async Task<IActionResult> AddUserGame([FromBody] int gameId)
+        {
+            var claimsIdentity = this.User.Identity as ClaimsIdentity;
+            var userIdClaim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            int userId = int.Parse(userIdClaim.Value);
+
+            _logger.LogInformation("Add User Game Attempted");
+            User? userInDb = db.Users.FirstOrDefault(u => u.Id == userId);
+            if (userInDb == null)
+            {
+                return NotFound("User not found");
+            }
+
+            UserGames newUserGame = new UserGames
+            {
+                UserId = userId,
+                GameId = gameId
+            };
+            db.Add(newUserGame);
+            db.SaveChanges();
+            return Created("UserGame", newUserGame);
         }
     }
 }

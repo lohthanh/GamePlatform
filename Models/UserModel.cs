@@ -33,4 +33,6 @@ public class User
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+    public List<UserGames> UserGames { get; set; } = new List<UserGames>();
 }

@@ -25,6 +25,7 @@ else
                             {
                                 <p style="display: inline-block;" class="me-2">@g.Name </p>
                             }
+                            <button @onclick="() => PostGameToUserList(game.Id)">@game.Id</button>
                         </div>
                     </div>
                 </div>
@@ -40,7 +41,7 @@ else
                             <h5>@game.Name</h5>
                             @foreach (var g in game.Genre)
                             {
-                                <p style="display: inline-block;" class="me-2">@g.Name </p>
+                                <p style="display: inline-block;" class="me-2">@g.Name</p>
                             }
                         </div>
                     </div>
@@ -66,7 +67,7 @@ else
     private string? nextPage;
     protected override async Task OnInitializedAsync()
     {
-        var res = await Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2");
+        var res = await Http.GetAsync($"https://api.rawg.io/api/games?key=0c67fba6f9b144eabd29a7e85c06e2f5");
         if (res.IsSuccessStatusCode)
         {
             Game = await res.Content.ReadFromJsonAsync<Games>();
@@ -94,6 +95,11 @@ else
                 Game = null;
             }
         }
+    }
+
+    private async void PostGameToUserList(int gameId) {
+        Console.WriteLine(gameId);
+        await Http.PostAsJsonAsync($"http://localhost:5088/api/users/games", new { gameId = gameId  });
     }
 
     private async void ScrollToTop()

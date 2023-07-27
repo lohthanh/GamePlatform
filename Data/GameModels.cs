@@ -6,6 +6,7 @@ public record class Games(
 );
 
 public record class GameResults(
+    [property: JsonPropertyName("id")] int Id,
     [property: JsonPropertyName("name")] string Name,
     [property: JsonPropertyName("background_image")] string Image,
     [property: JsonPropertyName("genres")] GetGenre[] Genre
