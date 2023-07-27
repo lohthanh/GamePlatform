@@ -37,7 +37,6 @@ else
                             {
                                 <p style="display: inline-block;" class="me-2">@g.Name </p>
                             }
-                            <button @onclick="() => PostGameToUserList(game.Id)">@game.Id</button>
                         </div>
                     </div>
                 </div>
@@ -80,12 +79,8 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-<<<<<<< HEAD
-        var res = await Http.GetAsync($"https://api.rawg.io/api/games?key=0c67fba6f9b144eabd29a7e85c06e2f5");
-=======
         var res = await
         Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2");
->>>>>>> origin/Thanh's-Branch
         if (res.IsSuccessStatusCode)
         {
             Game = await res.Content.ReadFromJsonAsync<Games>();
@@ -115,11 +110,6 @@ else
         }
     }
 
-<<<<<<< HEAD
-    private async void PostGameToUserList(int gameId) {
-        Console.WriteLine(gameId);
-        await Http.PostAsJsonAsync($"http://localhost:5088/api/users/games", new { gameId = gameId  });
-=======
     private async Task FetchPlatforms()
     {
         string url =
@@ -149,7 +139,6 @@ else
         }
 
         await FetchPlatforms();
->>>>>>> origin/Thanh's-Branch
     }
 
     private async void ScrollToTop()

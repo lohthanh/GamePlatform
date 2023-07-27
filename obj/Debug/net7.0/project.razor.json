@@ -701,43 +701,6 @@
         }
       },
       {
-        "HashCode": -31440365,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.XboxOne",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "XboxOne"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.XboxOne",
-          "Common.TypeNameIdentifier": "XboxOne",
-          "Common.TypeNamespace": "GamePlatform.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1194528994,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.XboxOne",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GamePlatform.Pages.XboxOne"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.XboxOne",
-          "Common.TypeNameIdentifier": "XboxOne",
-          "Common.TypeNamespace": "GamePlatform.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -763727925,
         "Kind": "Components.Component",
         "Name": "GamePlatform.Pages.Index",
@@ -770,6 +733,43 @@
           "Common.TypeName": "GamePlatform.Pages.Index",
           "Common.TypeNameIdentifier": "Index",
           "Common.TypeNamespace": "GamePlatform.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1572132692,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.App",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.App",
+          "Common.TypeNameIdentifier": "App",
+          "Common.TypeNamespace": "GamePlatform",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -181391315,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.App",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamePlatform.App"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.App",
+          "Common.TypeNameIdentifier": "App",
+          "Common.TypeNamespace": "GamePlatform",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -972,43 +972,6 @@
           "Common.TypeName": "GamePlatform.Shared.NavMenu",
           "Common.TypeNameIdentifier": "NavMenu",
           "Common.TypeNamespace": "GamePlatform.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1572132692,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.App",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "GamePlatform",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -181391315,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.App",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GamePlatform.App"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "GamePlatform",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
