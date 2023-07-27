@@ -1,8 +1,58 @@
+body {
+    background: linear-gradient(120deg, black, purple);
+    color: white;
+}
+
 .cardHover {
     transition: transform 0.2s;
     cursor: pointer;
+    position: relative;
+    background-color: black;
 }
 
-.cardHover:hover {
+.cardHover:hover::after {
+    top: 0;
+    left: 0;
+    height: 103%;
+    width: 102%;
+    filter: blur(20px);
     transform: scale(1.1);
+}
+
+.cardHover::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(white, rgba(128, 9, 128, 0.671));
+    z-index: -1;
+    filter: blur(0);
+    transition: all 500ms ease;
+    top: 0;
+    left: 0;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.load-btn {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.load-btn:hover {
+    background-color: rgba(145, 46, 145, 0.445);
+    border-color: white;
+}
+
+.back-btn {
+    background-color: rgba(128, 128, 128, 0.63);
+    color: white;
+    border-radius: 15px;
+}
+
+.back-btn:hover {
+    background-color: rgba(37, 16, 226, 0.521);
+    border-color: white;
 }

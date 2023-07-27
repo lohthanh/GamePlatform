@@ -1,10 +1,10 @@
-﻿@page "/"
+﻿@page "/all-time-top"
 @inject HttpClient Http
 @inject IJSRuntime JsRuntime
 
-<PageTitle>Index</PageTitle>
+<PageTitle>All Time Top Favorites by Players</PageTitle>
 
-<h1 class="text-center mb-5 mt-3">Welcome</h1>
+<h1 class="text-center mb-5 mt-3">All Time Top Favorites by Players</h1>
 
 @if (Game == null)
 {
@@ -63,12 +63,10 @@ else
 <div class="text-center mb-5 mt-3">
     @if (nextPage != null || Game?.Next != null)
     {
-        <button class="btn-lg load-btn" @onclick="LoadMore">Load More</button>
+        <button class="btn-lg btn-primary" @onclick="LoadMore">Load More</button>
     }
-    <button @onclick="ScrollToTop" class="btn-lg back-btn ms-3">Back to the Top</button>
+    <button @onclick="ScrollToTop" class="btn-lg btn-secondary ms-3">Back to the Top</button>
 </div>
-
-
 
 
 @code {
@@ -76,10 +74,11 @@ else
     private List<GameResults> GamesList = new List<GameResults>();
     private string? nextPage;
     private string? platformOption;
+
+
     protected override async Task OnInitializedAsync()
     {
-        var res = await
-        Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2");
+        var res = await Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2&dates=2010-01-01,2022-12-31&ordering=-rating");
         if (res.IsSuccessStatusCode)
         {
             Game = await res.Content.ReadFromJsonAsync<Games>();
@@ -111,8 +110,7 @@ else
 
     private async Task FetchPlatforms()
     {
-        string url =
-        "https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2";
+        string url = "https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2&dates=2010-01-01,2022-12-31&ordering=-rating";
         var res = await Http.GetAsync($"{url}{platformOption}");
         if (res.IsSuccessStatusCode)
         {
@@ -139,6 +137,7 @@ else
 
         await FetchPlatforms();
     }
+
 
     private async void ScrollToTop()
     {

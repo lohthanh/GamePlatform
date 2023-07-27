@@ -1,10 +1,11 @@
-﻿@page "/"
+﻿@page "/playstation4"
 @inject HttpClient Http
 @inject IJSRuntime JsRuntime
 
-<PageTitle>Index</PageTitle>
 
-<h1 class="text-center mb-5 mt-3">Welcome</h1>
+<PageTitle>PlayStation 4 Games</PageTitle>
+
+<h1 class="text-center">Playstation 4 Games</h1>
 
 @if (Game == null)
 {
@@ -13,17 +14,6 @@
 else
 {
     <div class="container text-center">
-        <div class="mb-4">
-            <label for="platformOption">Platforms</label>
-            <select style="width: 9rem;" class="ps-1" name="platformOption" id="platformOption"
-            @onchange="HandlePlatformSelection">
-                <option value="">Select Platform</option>
-                <option value="&platforms=4">PC</option>
-                <option value="&platforms=7">Nintendo Switch</option>
-                <option value="&platforms=18">Playstation 4</option>
-                <option value="&platforms=1">Xbox One</option>
-            </select>
-        </div>
         <div class="row">
             @foreach (var game in Game.Results)
             {
@@ -63,9 +53,9 @@ else
 <div class="text-center mb-5 mt-3">
     @if (nextPage != null || Game?.Next != null)
     {
-        <button class="btn-lg load-btn" @onclick="LoadMore">Load More</button>
+        <button class="btn-lg btn-primary" @onclick="LoadMore">Load More</button>
     }
-    <button @onclick="ScrollToTop" class="btn-lg back-btn ms-3">Back to the Top</button>
+    <button @onclick="ScrollToTop" class="btn-lg btn-secondary ms-3">Back to the Top</button>
 </div>
 
 
@@ -75,15 +65,13 @@ else
     private Games? Game = null;
     private List<GameResults> GamesList = new List<GameResults>();
     private string? nextPage;
-    private string? platformOption;
+    
     protected override async Task OnInitializedAsync()
     {
-        var res = await
-        Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2");
+        var res = await Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2&platforms=18");
         if (res.IsSuccessStatusCode)
         {
             Game = await res.Content.ReadFromJsonAsync<Games>();
-            nextPage = Game?.Next;
         }
         else
         {
@@ -109,39 +97,9 @@ else
         }
     }
 
-    private async Task FetchPlatforms()
-    {
-        string url =
-        "https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2";
-        var res = await Http.GetAsync($"{url}{platformOption}");
-        if (res.IsSuccessStatusCode)
-        {
-            Game = await res.Content.ReadFromJsonAsync<Games>();
-            nextPage = Game?.Next;
-        }
-        else
-        {
-            Game = null;
-        }
-    }
-
-    private async Task HandlePlatformSelection(ChangeEventArgs e)
-    {
-        var selectedOption = e.Value?.ToString();
-        if (selectedOption == "clear")
-        {
-            platformOption = null;
-        }
-        else
-        {
-            platformOption = selectedOption;
-        }
-
-        await FetchPlatforms();
-    }
-
     private async void ScrollToTop()
     {
         await JsRuntime.InvokeVoidAsync("OnScrollEvent");
     }
+
 }

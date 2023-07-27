@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\GamePlatform.csproj": {}
+    "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\GamePlatform.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\GamePlatform.csproj": {
+    "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\GamePlatform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\GamePlatform.csproj",
+        "projectUniqueName": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\GamePlatform.csproj",
         "projectName": "GamePlatform",
-        "projectPath": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\GamePlatform.csproj",
+        "projectPath": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\GamePlatform.csproj",
         "packagesPath": "C:\\Users\\lohth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\obj\\",
+        "outputPath": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lohth\\AppData\\Roaming\\NuGet\\NuGet.Config"

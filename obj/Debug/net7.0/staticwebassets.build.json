@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g6vy/ItgG7I8BsUjta+J8R1P9c4Q3sfGgYcIFgg0uhE=",
+  "Hash": "7gZqgSPqjxy932UFRrOmipNmVVY9X46NnK5prvb5CV4=",
   "Source": "GamePlatform",
   "BasePath": "_content/GamePlatform",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "GamePlatform\\wwwroot",
       "Source": "GamePlatform",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GamePlatform.styles.css",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GamePlatform.styles.css",
       "SourceId": "GamePlatform",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "GamePlatform.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GamePlatform.styles.css"
+      "OriginalItemSpec": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GamePlatform.styles.css"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\GamePlatform.bundle.scp.css",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\GamePlatform.bundle.scp.css",
       "SourceId": "GamePlatform",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "GamePlatform.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\GamePlatform.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\GamePlatform.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\site.css",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\css\\styles.css",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\favicon.png",
       "SourceId": "GamePlatform",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\CodingDojo\\Projects\\GamePlatform\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\wwwroot\\",
       "BasePath": "_content/GamePlatform",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
