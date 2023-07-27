@@ -1,6 +1,7 @@
 ﻿@page "/"
 @inject HttpClient Http
 @inject IJSRuntime JsRuntime
+@inject NavigationManager NavigationManager
 
 <PageTitle>Index</PageTitle>
 
@@ -31,7 +32,7 @@ else
                     <div class="card cardHover mb-3" style="width: 18rem; height: 18rem;">
                         <img src="@game.Image" alt="@game.Name" class="card-img-top border border-3" style="height: 10rem;">
                         <div class="card-body">
-                            <h5>@game.Name</h5>
+                        <h5 > <a style="color: rebeccapurple;" href="/game/@game.Id">@game.Name</a></h5>
                             @foreach (var g in game.Genre)
                             {
                                 <p style="display: inline-block;" class="me-2">@g.Name </p>
@@ -48,7 +49,7 @@ else
                     <div class="card cardHover mb-3" style="width: 18rem; height: 18rem;">
                         <img src="@game.Image" alt="@game.Name" class="card-img-top border border-3" style="height: 10rem;">
                         <div class="card-body">
-                            <h5>@game.Name</h5>
+                            <h5><a style="color: rebeccapurple;" href="/game/@game.Id">@game.Name</a></h5>
                             @foreach (var g in game.Genre)
                             {
                                 <p style="display: inline-block;" class="me-2">@g.Name </p>
@@ -69,13 +70,13 @@ else
 </div>
 
 
-
-
 @code {
     private Games? Game = null;
     private List<GameResults> GamesList = new List<GameResults>();
     private string? nextPage;
     private string? platformOption;
+
+
     protected override async Task OnInitializedAsync()
     {
         var res = await

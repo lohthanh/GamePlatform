@@ -1,143 +1,57 @@
-﻿@page "/game/{id}"
+﻿@page "/game/{Id:int}"
 @inject HttpClient Http
 @inject IJSRuntime JsRuntime
+@inject NavigationManager NavigationManager
 
 <PageTitle>View Game Details</PageTitle>
 
-<h1 class="text-center mb-5 mt-3">Game Name</h1>
+<h1 class="text-center mb-5 mt-3">@OneGame?.Name</h1>
 
-@if (Game == null)
+@if (OneGame == null)
 {
     <h1>Loading....</h1>
 }
 else
 {
-    <div class="container text-center">
-        <div class="mb-4 fs-5">
-            <label for="platformOption">Platforms</label>
-            <select style="width: 11.5rem;" class="ps-1 selectBar" name="platformOption" id="platformOption"
-            @onchange="HandlePlatformSelection">
-                <option value="">Select Platform</option>
-                <option value="&platforms=4">PC</option>
-                <option value="&platforms=7">Nintendo Switch</option>
-                <option value="&platforms=18">Playstation 4</option>
-                <option value="&platforms=1">Xbox One</option>
-            </select>
-        </div>
-        <div class="row">
-            @foreach (var game in Game.Results)
-            {
-                <div class="col">
-                    <div class="card cardHover mb-3" style="width: 18rem; height: 18rem;">
-                        <img src="@game.Image" alt="@game.Name" class="card-img-top border border-3" style="height: 10rem;">
-                        <div class="card-body">
-                            <h5>@game.Name</h5>
-                            @foreach (var g in game.Genre)
-                            {
-                                <p style="display: inline-block;" class="me-2">@g.Name </p>
-                            }
-                        </div>
-                    </div>
-                </div>
-            }
-        </div>
-        <div class="row">
-            @foreach (var game in GamesList)
-            {
-                <div class="col">
-                    <div class="card cardHover mb-3" style="width: 18rem; height: 18rem;">
-                        <img src="@game.Image" alt="@game.Name" class="card-img-top border border-3" style="height: 10rem;">
-                        <div class="card-body">
-                            <h5>@game.Name</h5>
-                            @foreach (var g in game.Genre)
-                            {
-                                <p style="display: inline-block;" class="me-2">@g.Name </p>
-                            }
-                        </div>
-                    </div>
-                </div>
-            }
+    <div class="image-container" style="@ImageContainerStyle">
+        <div class="container div-container text-center">
+            <div>
+                <h4>Genres:</h4>
+                @foreach (var genre in OneGame.Genre)
+                {
+                    <p style="display: inline-block;" class="me-3">@genre.Name</p>
+                }
+            </div>
+            <p><a href="@OneGame.Website" target="_blank">@OneGame.Website</a></p>
         </div>
     </div>
 }
-<div class="text-center mb-5 mt-3">
-    @if (nextPage != null || Game?.Next != null)
-    {
-        <button class="btn-lg button" @onclick="LoadMore">Load More</button>
-    }
-    <button @onclick="ScrollToTop" class="btn-lg button ms-3">Back to the Top</button>
-</div>
-
-
-
 
 @code {
     private Games? Game = null;
-    private List<GameResults> GamesList = new List<GameResults>();
-    private string? nextPage;
-    private string? platformOption;
+
+    private bool showScrollButton = false;
+
+    private Game? OneGame;
+
+    [Parameter]
+    public int Id { get; set; }
+    private string ImageContainerStyle => $"background-image: url('{OneGame?.Image}');";
+
+
     protected override async Task OnInitializedAsync()
     {
+
         var res = await
-        Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2");
+        Http.GetAsync($"https://api.rawg.io/api/games/{Id}?key=9cdb4d324c4a4643bb3d48d32b5884b2");
         if (res.IsSuccessStatusCode)
         {
-            Game = await res.Content.ReadFromJsonAsync<Games>();
-            nextPage = Game?.Next;
+            OneGame = await res.Content.ReadFromJsonAsync<Game>();
         }
         else
         {
-            Game = null;
+            OneGame = null;
         }
-    }
-
-    private async Task LoadMore()
-    {
-        if (nextPage != null)
-        {
-            var res = await Http.GetAsync($"{nextPage}");
-            if (res.IsSuccessStatusCode)
-            {
-                var gamesResult = await res.Content.ReadFromJsonAsync<Games>();
-                nextPage = gamesResult?.Next;
-                GamesList.AddRange(gamesResult.Results);
-            }
-            else
-            {
-                Game = null;
-            }
-        }
-    }
-
-    private async Task FetchPlatforms()
-    {
-        string url =
-        "https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2";
-        var res = await Http.GetAsync($"{url}{platformOption}");
-        if (res.IsSuccessStatusCode)
-        {
-            Game = await res.Content.ReadFromJsonAsync<Games>();
-            nextPage = Game?.Next;
-        }
-        else
-        {
-            Game = null;
-        }
-    }
-
-    private async Task HandlePlatformSelection(ChangeEventArgs e)
-    {
-        var selectedOption = e.Value?.ToString();
-        if (selectedOption == "clear")
-        {
-            platformOption = null;
-        }
-        else
-        {
-            platformOption = selectedOption;
-        }
-
-        await FetchPlatforms();
     }
 
     private async void ScrollToTop()
