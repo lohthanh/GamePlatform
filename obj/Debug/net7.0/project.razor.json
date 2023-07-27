@@ -13,38 +13,297 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -234403286,
+        "HashCode": -1834372403,
         "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Genres.Action",
+        "Name": "GamePlatform.Pages.Index",
         "AssemblyName": "GamePlatform",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Action"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Genres.Action",
-          "Common.TypeNameIdentifier": "Action",
-          "Common.TypeNamespace": "GamePlatform.Pages.Genres",
+          "Common.TypeName": "GamePlatform.Pages.Index",
+          "Common.TypeNameIdentifier": "Index",
+          "Common.TypeNamespace": "GamePlatform.Pages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1450498830,
+        "HashCode": 1792519125,
         "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Genres.Action",
+        "Name": "GamePlatform.Pages.Index",
         "AssemblyName": "GamePlatform",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GamePlatform.Pages.Genres.Action"
+            "TagName": "GamePlatform.Pages.Index"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Genres.Action",
-          "Common.TypeNameIdentifier": "Action",
-          "Common.TypeNamespace": "GamePlatform.Pages.Genres",
+          "Common.TypeName": "GamePlatform.Pages.Index",
+          "Common.TypeNameIdentifier": "Index",
+          "Common.TypeNamespace": "GamePlatform.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -924224753,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Top.AllTime",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AllTime"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Top.AllTime",
+          "Common.TypeNameIdentifier": "AllTime",
+          "Common.TypeNamespace": "GamePlatform.Pages.Top",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 2134699143,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Top.AllTime",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamePlatform.Pages.Top.AllTime"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Top.AllTime",
+          "Common.TypeNameIdentifier": "AllTime",
+          "Common.TypeNamespace": "GamePlatform.Pages.Top",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 865581371,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Top.BestOfTheYear",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BestOfTheYear"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Top.BestOfTheYear",
+          "Common.TypeNameIdentifier": "BestOfTheYear",
+          "Common.TypeNamespace": "GamePlatform.Pages.Top",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -454443687,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Top.BestOfTheYear",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamePlatform.Pages.Top.BestOfTheYear"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Top.BestOfTheYear",
+          "Common.TypeNameIdentifier": "BestOfTheYear",
+          "Common.TypeNamespace": "GamePlatform.Pages.Top",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1886151035,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Top.MostPopular",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MostPopular"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Top.MostPopular",
+          "Common.TypeNameIdentifier": "MostPopular",
+          "Common.TypeNamespace": "GamePlatform.Pages.Top",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1531780789,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Top.MostPopular",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamePlatform.Pages.Top.MostPopular"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Top.MostPopular",
+          "Common.TypeNameIdentifier": "MostPopular",
+          "Common.TypeNamespace": "GamePlatform.Pages.Top",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1729249544,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Platforms.Playstation4",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Playstation4"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Platforms.Playstation4",
+          "Common.TypeNameIdentifier": "Playstation4",
+          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 410042642,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Platforms.Playstation4",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamePlatform.Pages.Platforms.Playstation4"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Platforms.Playstation4",
+          "Common.TypeNameIdentifier": "Playstation4",
+          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 55323603,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Platforms.XboxOne",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "XboxOne"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Platforms.XboxOne",
+          "Common.TypeNameIdentifier": "XboxOne",
+          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 113056190,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Platforms.XboxOne",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamePlatform.Pages.Platforms.XboxOne"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Platforms.XboxOne",
+          "Common.TypeNameIdentifier": "XboxOne",
+          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1393410167,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Platforms.PC",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PC"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Platforms.PC",
+          "Common.TypeNameIdentifier": "PC",
+          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1441249801,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Platforms.PC",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamePlatform.Pages.Platforms.PC"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Platforms.PC",
+          "Common.TypeNameIdentifier": "PC",
+          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1647879547,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Platforms.NintendoSwitch",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NintendoSwitch"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Platforms.NintendoSwitch",
+          "Common.TypeNameIdentifier": "NintendoSwitch",
+          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 951974754,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Platforms.NintendoSwitch",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamePlatform.Pages.Platforms.NintendoSwitch"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Platforms.NintendoSwitch",
+          "Common.TypeNameIdentifier": "NintendoSwitch",
+          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -309,297 +568,75 @@
         }
       },
       {
-        "HashCode": -1647879547,
+        "HashCode": -234403286,
         "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Platforms.NintendoSwitch",
+        "Name": "GamePlatform.Pages.Genres.Action",
         "AssemblyName": "GamePlatform",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NintendoSwitch"
+            "TagName": "Action"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Platforms.NintendoSwitch",
-          "Common.TypeNameIdentifier": "NintendoSwitch",
-          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
+          "Common.TypeName": "GamePlatform.Pages.Genres.Action",
+          "Common.TypeNameIdentifier": "Action",
+          "Common.TypeNamespace": "GamePlatform.Pages.Genres",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 951974754,
+        "HashCode": -1450498830,
         "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Platforms.NintendoSwitch",
+        "Name": "GamePlatform.Pages.Genres.Action",
         "AssemblyName": "GamePlatform",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GamePlatform.Pages.Platforms.NintendoSwitch"
+            "TagName": "GamePlatform.Pages.Genres.Action"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Platforms.NintendoSwitch",
-          "Common.TypeNameIdentifier": "NintendoSwitch",
-          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
+          "Common.TypeName": "GamePlatform.Pages.Genres.Action",
+          "Common.TypeNameIdentifier": "Action",
+          "Common.TypeNamespace": "GamePlatform.Pages.Genres",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1393410167,
+        "HashCode": 1590723395,
         "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Platforms.PC",
+        "Name": "GamePlatform.Pages.Details.ViewOne",
         "AssemblyName": "GamePlatform",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "PC"
+            "TagName": "ViewOne"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Platforms.PC",
-          "Common.TypeNameIdentifier": "PC",
-          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
+          "Common.TypeName": "GamePlatform.Pages.Details.ViewOne",
+          "Common.TypeNameIdentifier": "ViewOne",
+          "Common.TypeNamespace": "GamePlatform.Pages.Details",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1441249801,
+        "HashCode": 1608747818,
         "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Platforms.PC",
+        "Name": "GamePlatform.Pages.Details.ViewOne",
         "AssemblyName": "GamePlatform",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GamePlatform.Pages.Platforms.PC"
+            "TagName": "GamePlatform.Pages.Details.ViewOne"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Platforms.PC",
-          "Common.TypeNameIdentifier": "PC",
-          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1729249544,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Platforms.Playstation4",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Playstation4"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Platforms.Playstation4",
-          "Common.TypeNameIdentifier": "Playstation4",
-          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 410042642,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Platforms.Playstation4",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GamePlatform.Pages.Platforms.Playstation4"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Platforms.Playstation4",
-          "Common.TypeNameIdentifier": "Playstation4",
-          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 55323603,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Platforms.XboxOne",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "XboxOne"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Platforms.XboxOne",
-          "Common.TypeNameIdentifier": "XboxOne",
-          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 113056190,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Platforms.XboxOne",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GamePlatform.Pages.Platforms.XboxOne"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Platforms.XboxOne",
-          "Common.TypeNameIdentifier": "XboxOne",
-          "Common.TypeNamespace": "GamePlatform.Pages.Platforms",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1886151035,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Top.MostPopular",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MostPopular"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Top.MostPopular",
-          "Common.TypeNameIdentifier": "MostPopular",
-          "Common.TypeNamespace": "GamePlatform.Pages.Top",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1531780789,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Top.MostPopular",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GamePlatform.Pages.Top.MostPopular"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Top.MostPopular",
-          "Common.TypeNameIdentifier": "MostPopular",
-          "Common.TypeNamespace": "GamePlatform.Pages.Top",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -924224753,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Top.AllTime",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AllTime"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Top.AllTime",
-          "Common.TypeNameIdentifier": "AllTime",
-          "Common.TypeNamespace": "GamePlatform.Pages.Top",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 2134699143,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Top.AllTime",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GamePlatform.Pages.Top.AllTime"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Top.AllTime",
-          "Common.TypeNameIdentifier": "AllTime",
-          "Common.TypeNamespace": "GamePlatform.Pages.Top",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 865581371,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Top.BestOfTheYear",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BestOfTheYear"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Top.BestOfTheYear",
-          "Common.TypeNameIdentifier": "BestOfTheYear",
-          "Common.TypeNamespace": "GamePlatform.Pages.Top",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -454443687,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Top.BestOfTheYear",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GamePlatform.Pages.Top.BestOfTheYear"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Top.BestOfTheYear",
-          "Common.TypeNameIdentifier": "BestOfTheYear",
-          "Common.TypeNamespace": "GamePlatform.Pages.Top",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1834372403,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Index",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Index",
-          "Common.TypeNameIdentifier": "Index",
-          "Common.TypeNamespace": "GamePlatform.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1792519125,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Index",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GamePlatform.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Index",
-          "Common.TypeNameIdentifier": "Index",
-          "Common.TypeNamespace": "GamePlatform.Pages",
+          "Common.TypeName": "GamePlatform.Pages.Details.ViewOne",
+          "Common.TypeNameIdentifier": "ViewOne",
+          "Common.TypeNamespace": "GamePlatform.Pages.Details",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -19488,6 +19525,11 @@
     {
       "FilePath": "c:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\Pages\\Platforms\\PC.razor",
       "TargetPath": "Pages\\Platforms\\PC.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\lohth\\OneDrive\\Desktop\\GamePlatform - Backup\\Pages\\Details\\ViewOne.razor",
+      "TargetPath": "Pages\\Details\\ViewOne.razor",
       "FileKind": "component"
     },
     {
