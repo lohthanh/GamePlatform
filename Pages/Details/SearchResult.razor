@@ -1,14 +1,17 @@
-﻿@page "/"
+@page "/game/search-results/{searchQuery}"
 @inject HttpClient Http
 @inject IJSRuntime JsRuntime
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Search Results</PageTitle>
 
-<h1 class="text-center mb-5 mt-3">Welcome</h1>
-
-@if (Game == null)
+<h2 class="text-center mb-5 mt-3">Search Results for "@searchQuery"</h2>
+@if (SearchGame == null)
 {
-    <h1>Loading....</h1>
+    <h1>Loading...</h1>
+}
+else if (SearchGame.Results == null)
+{
+    <h1>No game found...</h1>
 }
 else
 {
@@ -25,13 +28,13 @@ else
             </select>
         </div>
         <div class="row">
-            @foreach (var game in Game.Results)
+            @foreach (var game in SearchGame.Results)
             {
                 <div class="col">
                     <div class="card cardHover mb-3" style="width: 18rem; height: 18rem;">
                         <img src="@game.Image" alt="@game.Name" class="card-img-top border border-3" style="height: 10rem;">
                         <div class="card-body">
-                        <h5 > <a style="color: rebeccapurple;" href="/game/@game.Id">@game.Name</a></h5>
+                            <h5> <a style="color: rebeccapurple;" href="/game/@game.Id">@game.Name</a></h5>
                             @foreach (var g in game.Genre)
                             {
                                 <p style="display: inline-block;" class="me-2">@g.Name </p>
@@ -61,33 +64,38 @@ else
     </div>
 }
 <div class="text-center mb-5 mt-3">
-    @if (nextPage != null || Game?.Next != null)
+    @if (nextPage != null || SearchGame?.Next != null)
     {
         <button class="btn-lg button" @onclick="LoadMore">Load More</button>
     }
-    <button @onclick="ScrollToTop" class="btn-lg button ms-3">Back to the Top</button>
+    @if (SearchGame != null)
+    {
+        <button @onclick="ScrollToTop" class="btn-lg button ms-3">Back to the Top</button>
+    }
 </div>
 
-
 @code {
-    private Games? Game = null;
+    [Parameter]
+    public string? searchQuery { get; set; }
+    private Games? SearchGame { get; set; }
     private List<GameResults> GamesList = new List<GameResults>();
     private string? nextPage;
-    private string? platformOption;
+    private string? platformOption = "";
 
-
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnParametersSetAsync()
     {
+        platformOption = "";
+
         var res = await
-        Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2");
+        Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2&search={searchQuery}");
         if (res.IsSuccessStatusCode)
         {
-            Game = await res.Content.ReadFromJsonAsync<Games>();
-            nextPage = Game?.Next;
+            SearchGame = await res.Content.ReadFromJsonAsync<Games>();
+            Console.WriteLine($"API Response: {await res.Content.ReadAsStringAsync()}");
         }
         else
         {
-            Game = null;
+            SearchGame = null;
         }
     }
 
@@ -104,7 +112,7 @@ else
             }
             else
             {
-                Game = null;
+                SearchGame = null;
             }
         }
     }
@@ -112,31 +120,22 @@ else
     private async Task FetchPlatforms()
     {
         string url =
-        "https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2";
+        $"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2&search={searchQuery}";
         var res = await Http.GetAsync($"{url}{platformOption}");
         if (res.IsSuccessStatusCode)
         {
-            Game = await res.Content.ReadFromJsonAsync<Games>();
-            nextPage = Game?.Next;
+            SearchGame = await res.Content.ReadFromJsonAsync<Games>();
+            nextPage = SearchGame?.Next;
         }
         else
         {
-            Game = null;
+            SearchGame = null;
         }
     }
 
     private async Task HandlePlatformSelection(ChangeEventArgs e)
     {
-        var selectedOption = e.Value?.ToString();
-        if (selectedOption == "clear")
-        {
-            platformOption = null;
-        }
-        else
-        {
-            platformOption = selectedOption;
-        }
-
+        platformOption = e.Value?.ToString();
         await FetchPlatforms();
     }
 
