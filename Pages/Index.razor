@@ -2,6 +2,7 @@
 @inject HttpClient Http
 @inject IJSRuntime JsRuntime
 @inject NavigationManager NavigationManager
+@inject ILocalStorageService LocalStorage
 
 <PageTitle>Index</PageTitle>
 
@@ -38,6 +39,7 @@ else
                                 <p style="display: inline-block;" class="me-2">@g.Name </p>
                             }
                         </div>
+                        <button @onclick="() => PostGameToUserList(game.Id)">@game.Id</button>
                     </div>
                 </div>
             }
@@ -80,7 +82,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         var res = await
-        Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2");
+        Http.GetAsync($"https://api.rawg.io/api/games?key=0c67fba6f9b144eabd29a7e85c06e2f5");
         if (res.IsSuccessStatusCode)
         {
             Game = await res.Content.ReadFromJsonAsync<Games>();
@@ -113,7 +115,7 @@ else
     private async Task FetchPlatforms()
     {
         string url =
-        "https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2";
+        "https://api.rawg.io/api/games?key=0c67fba6f9b144eabd29a7e85c06e2f5";
         var res = await Http.GetAsync($"{url}{platformOption}");
         if (res.IsSuccessStatusCode)
         {
@@ -139,6 +141,14 @@ else
         }
 
         await FetchPlatforms();
+    }
+
+    private async void PostGameToUserList(int gameId) {
+        if(!Http.DefaultRequestHeaders.Contains("Authorization")) {
+            var token = await LocalStorage.GetItemAsync<string>("authToken");
+            Http.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
+        }
+        await Http.PostAsJsonAsync($"http://localhost:5088/api/users/games", new { gameId });
     }
 
     private async void ScrollToTop()

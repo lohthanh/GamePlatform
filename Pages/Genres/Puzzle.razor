@@ -80,7 +80,7 @@ else
     private string? platformOption;
     protected override async Task OnInitializedAsync()
     {
-        var res = await Http.GetAsync($"https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2&genres=7");
+        var res = await Http.GetAsync($"https://api.rawg.io/api/games?key=0c67fba6f9b144eabd29a7e85c06e2f5&genres=7");
         if (res.IsSuccessStatusCode)
         {
             Game = await res.Content.ReadFromJsonAsync<Games>();
@@ -112,7 +112,7 @@ else
 
     private async Task FetchPlatforms()
     {
-        string url = "https://api.rawg.io/api/games?key=9cdb4d324c4a4643bb3d48d32b5884b2&genres=4";
+        string url = "https://api.rawg.io/api/games?key=0c67fba6f9b144eabd29a7e85c06e2f5&genres=4";
         var res = await Http.GetAsync($"{url}{platformOption}");
         if (res.IsSuccessStatusCode)
         {

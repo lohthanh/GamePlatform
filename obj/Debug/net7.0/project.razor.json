@@ -346,43 +346,6 @@
         }
       },
       {
-        "HashCode": 2091150965,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Genres.Puzzle",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Puzzle"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Genres.Puzzle",
-          "Common.TypeNameIdentifier": "Puzzle",
-          "Common.TypeNamespace": "GamePlatform.Pages.Genres",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 2135341369,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Genres.Puzzle",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GamePlatform.Pages.Genres.Puzzle"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Genres.Puzzle",
-          "Common.TypeNameIdentifier": "Puzzle",
-          "Common.TypeNamespace": "GamePlatform.Pages.Genres",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 594144798,
         "Kind": "Components.Component",
         "Name": "GamePlatform.Pages.Genres.Sports",
@@ -414,6 +377,43 @@
         "Metadata": {
           "Common.TypeName": "GamePlatform.Pages.Genres.Sports",
           "Common.TypeNameIdentifier": "Sports",
+          "Common.TypeNamespace": "GamePlatform.Pages.Genres",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 2091150965,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Genres.Puzzle",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Puzzle"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Genres.Puzzle",
+          "Common.TypeNameIdentifier": "Puzzle",
+          "Common.TypeNamespace": "GamePlatform.Pages.Genres",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 2135341369,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Genres.Puzzle",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamePlatform.Pages.Genres.Puzzle"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Genres.Puzzle",
+          "Common.TypeNameIdentifier": "Puzzle",
           "Common.TypeNamespace": "GamePlatform.Pages.Genres",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -627,43 +627,6 @@
         }
       },
       {
-        "HashCode": 416007765,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Login",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Login"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Login",
-          "Common.TypeNameIdentifier": "Login",
-          "Common.TypeNamespace": "GamePlatform.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1677996947,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Pages.Login",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GamePlatform.Pages.Login"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Pages.Login",
-          "Common.TypeNameIdentifier": "Login",
-          "Common.TypeNamespace": "GamePlatform.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 854256437,
         "Kind": "Components.Component",
         "Name": "GamePlatform.Pages.Register",
@@ -695,6 +658,43 @@
         "Metadata": {
           "Common.TypeName": "GamePlatform.Pages.Register",
           "Common.TypeNameIdentifier": "Register",
+          "Common.TypeNamespace": "GamePlatform.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 416007765,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Login",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Login"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Login",
+          "Common.TypeNameIdentifier": "Login",
+          "Common.TypeNamespace": "GamePlatform.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1677996947,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Login",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamePlatform.Pages.Login"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Login",
+          "Common.TypeNameIdentifier": "Login",
           "Common.TypeNamespace": "GamePlatform.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"

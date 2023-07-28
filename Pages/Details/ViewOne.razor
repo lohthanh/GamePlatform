@@ -43,7 +43,7 @@ else
     {
 
         var res = await
-        Http.GetAsync($"https://api.rawg.io/api/games/{Id}?key=9cdb4d324c4a4643bb3d48d32b5884b2");
+        Http.GetAsync($"https://api.rawg.io/api/games/{Id}?key=0c67fba6f9b144eabd29a7e85c06e2f5");
         if (res.IsSuccessStatusCode)
         {
             OneGame = await res.Content.ReadFromJsonAsync<Game>();

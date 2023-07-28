@@ -16,9 +16,9 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddHttpClient();
 builder.Services.AddBlazoredLocalStorage();
-builder.Services.AddControllersWithViews();
-builder.Services.AddOptions();
-builder.Services.AddAuthorizationCore();
+// builder.Services.AddControllersWithViews();
+// builder.Services.AddOptions();
+// builder.Services.AddAuthorizationCore();
 builder.Services.AddDbContext<DBContext>(options =>
 {
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
@@ -46,14 +46,14 @@ if (!app.Environment.IsDevelopment())
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapBlazorHub();
 
 app.MapRazorPages();
 app.MapControllers();
 app.MapFallbackToPage("/_Host");
 
-app.UseAuthentication();
-app.UseAuthorization();
+// app.UseAuthorization();
 
 app.Run();

@@ -103,12 +103,12 @@ namespace GamePlatform.Controllers
         [HttpPost("games")]
         public async Task<IActionResult> AddUserGame([FromBody] int gameId)
         {
+            _logger.LogInformation("Add User Game Attempted");
             var claimsIdentity = this.User.Identity as ClaimsIdentity;
             var userIdClaim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
 
             int userId = int.Parse(userIdClaim.Value);
 
-            _logger.LogInformation("Add User Game Attempted");
             User? userInDb = db.Users.FirstOrDefault(u => u.Id == userId);
             if (userInDb == null)
             {

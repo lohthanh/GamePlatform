@@ -46,7 +46,8 @@
             if (responseObject != null)
             {
                 await LocalStorage.SetItemAsync("authToken", responseObject.token);
-                Http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", responseObject.token);
+                Http.DefaultRequestHeaders.Add("Authorization", $"Bearer {responseObject.token}");
+                @* Http.DefaultRequestHeaders.Add = new AuthenticationHeaderValue("Bearer", responseObject.token); *@
                 
                 // Navigate to home page or wherever you want after successful login
                 Navigation.NavigateTo("/");
