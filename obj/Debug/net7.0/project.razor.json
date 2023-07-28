@@ -627,6 +627,65 @@
         }
       },
       {
+        "HashCode": -226409619,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Details.SearchResult",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SearchResult"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "searchQuery",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "searchQuery",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Details.SearchResult",
+          "Common.TypeNameIdentifier": "SearchResult",
+          "Common.TypeNamespace": "GamePlatform.Pages.Details",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 831393954,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Pages.Details.SearchResult",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamePlatform.Pages.Details.SearchResult"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "searchQuery",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "searchQuery",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Pages.Details.SearchResult",
+          "Common.TypeNameIdentifier": "SearchResult",
+          "Common.TypeNamespace": "GamePlatform.Pages.Details",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
         "HashCode": 854256437,
         "Kind": "Components.Component",
         "Name": "GamePlatform.Pages.Register",
@@ -770,6 +829,43 @@
           "Common.TypeName": "GamePlatform.App",
           "Common.TypeNameIdentifier": "App",
           "Common.TypeNamespace": "GamePlatform",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1402348202,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Shared.NavMenu",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Shared.NavMenu",
+          "Common.TypeNameIdentifier": "NavMenu",
+          "Common.TypeNamespace": "GamePlatform.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 409590396,
+        "Kind": "Components.Component",
+        "Name": "GamePlatform.Shared.NavMenu",
+        "AssemblyName": "GamePlatform",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamePlatform.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "GamePlatform.Shared.NavMenu",
+          "Common.TypeNameIdentifier": "NavMenu",
+          "Common.TypeNamespace": "GamePlatform.Shared",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -937,43 +1033,6 @@
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.None"
-        }
-      },
-      {
-        "HashCode": 1402348202,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Shared.NavMenu",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Shared.NavMenu",
-          "Common.TypeNameIdentifier": "NavMenu",
-          "Common.TypeNamespace": "GamePlatform.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 409590396,
-        "Kind": "Components.Component",
-        "Name": "GamePlatform.Shared.NavMenu",
-        "AssemblyName": "GamePlatform",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GamePlatform.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "GamePlatform.Shared.NavMenu",
-          "Common.TypeNameIdentifier": "NavMenu",
-          "Common.TypeNamespace": "GamePlatform.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
         }
       },
       {
@@ -19612,6 +19671,11 @@
       "FilePath": "c:\\Users\\danny\\Documents\\dev\\GamePlatform\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\danny\\Documents\\dev\\GamePlatform\\Pages\\Details\\SearchResult.razor",
+      "TargetPath": "Pages\\Details\\SearchResult.razor",
+      "FileKind": "component"
     },
     {
       "FilePath": "c:\\Users\\danny\\Documents\\dev\\GamePlatform\\Pages\\Top\\BestOfTheYear.razor",

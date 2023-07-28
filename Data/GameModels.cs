@@ -19,7 +19,7 @@ public record class GetGenre(
 public record class Game(
     [property: JsonPropertyName("id")] int Id,
     [property: JsonPropertyName("name")] string Name,
-    [property: JsonPropertyName("description")] string Description,
+    [property: JsonPropertyName("description_raw")] string Description,
     [property: JsonPropertyName("released")] string ReleasedDate,
     [property: JsonPropertyName("background_image")] string Image,
     [property: JsonPropertyName("platforms")] GetPlatformsSet[] Platforms,
@@ -33,4 +33,13 @@ public record class GetPlatformsSet(
 
 public record class GetPlatform(
     [property: JsonPropertyName("name")] string Name
+);
+
+public record class GameScreenshot(
+    [property: JsonPropertyName("id")] int Id,
+    [property: JsonPropertyName("results")] GetScreenshots[] Screenshot
+);
+
+public record class GetScreenshots(
+    [property: JsonPropertyName("image")] string Image
 );

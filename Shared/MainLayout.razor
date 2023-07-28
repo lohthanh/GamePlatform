@@ -1,4 +1,6 @@
 ﻿@inherits LayoutComponentBase
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
 
 <PageTitle>GamePlatform</PageTitle>
 
@@ -8,7 +10,11 @@
     </div>
 
     <main>
-        <div class="top-row px-4">
+        <div class="top-row px-4 d-flex justify-content-between">
+            <div class="searchDiv">
+                <input class="w-75 input" type="text" @bind="searchResults">
+                <button @onclick="FetchData" class="button">Search</button>
+            </div>
             <a href="/register" target="_blank">Register</a>
             <a href="/login" target="_blank">Login</a>
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
@@ -18,3 +24,16 @@
         </article>
     </main>
 </div>
+
+
+@code {
+    private string? searchResults;
+    protected Games? SearchedGame = null;
+
+    private async Task FetchData()
+    {
+        var searchQuery = Uri.EscapeDataString(this.searchResults ?? "");
+        NavigationManager.NavigateTo($"/game/search-results/{searchQuery}");
+    }
+
+}

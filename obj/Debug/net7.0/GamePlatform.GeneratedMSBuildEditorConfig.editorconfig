@@ -9,113 +9,117 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GamePlatform
 build_property.RootNamespace = GamePlatform
-build_property.ProjectDir = C:\Users\danny\Documents\dev\GamePlatform\
+build_property.ProjectDir = c:\Users\danny\Documents\dev\GamePlatform\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\danny\Documents\dev\GamePlatform
+build_property.MSBuildProjectDirectory = c:\Users\danny\Documents\dev\GamePlatform
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/App.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Details/ViewOne.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Details/SearchResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlsc1xTZWFyY2hSZXN1bHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Details/ViewOne.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlsc1xWaWV3T25lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Action.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Action.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXEFjdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Adventure.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Adventure.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXEFkdmVudHVyZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Puzzle.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Puzzle.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXFB1enpsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Racing.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Racing.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXFJhY2luZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/RPG.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/RPG.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXFJQRy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Shooter.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Shooter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXFNob290ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Sports.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Sports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXFNwb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Strategy.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Genres/Strategy.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXFN0cmF0ZWd5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Index.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Login.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Platforms/NintendoSwitch.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Platforms/NintendoSwitch.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhdGZvcm1zXE5pbnRlbmRvU3dpdGNoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Platforms/PC.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Platforms/PC.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhdGZvcm1zXFBDLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Platforms/Playstation4.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Platforms/Playstation4.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhdGZvcm1zXFBsYXlzdGF0aW9uNC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Platforms/XboxOne.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Platforms/XboxOne.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhdGZvcm1zXFhib3hPbmUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Register.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Top/AllTime.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Top/AllTime.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9wXEFsbFRpbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Top/BestOfTheYear.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Top/BestOfTheYear.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9wXEJlc3RPZlRoZVllYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Top/MostPopular.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Top/MostPopular.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9wXE1vc3RQb3B1bGFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Shared/SurveyPrompt.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/_Imports.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Shared/MainLayout.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-g7tc52f24v
 
-[C:/Users/danny/Documents/dev/GamePlatform/Shared/NavMenu.razor]
+[c:/Users/danny/Documents/dev/GamePlatform/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-v8loa0p2ex
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/Error.cshtml]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/danny/Documents/dev/GamePlatform/Pages/_Host.cshtml]
+[c:/Users/danny/Documents/dev/GamePlatform/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
