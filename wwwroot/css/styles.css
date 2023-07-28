@@ -121,3 +121,13 @@ body::-webkit-scrollbar-thumb {
 .input {
     border-radius: 5px;
 }
+
+h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}

@@ -11,7 +11,7 @@
 }
 else if (SearchGame.Results == null)
 {
-    <h1>No game found...</h1>
+    <h2>No game found...</h2>
 }
 else
 {
@@ -31,10 +31,10 @@ else
             @foreach (var game in SearchGame.Results)
             {
                 <div class="col">
-                    <div class="card cardHover mb-3" style="width: 18rem; height: 18rem;">
+                    <div class="card cardHover mb-3" style="width: 18rem; height: 19rem;">
                         <img src="@game.Image" alt="@game.Name" class="card-img-top border border-3" style="height: 10rem;">
                         <div class="card-body">
-                            <h5> <a style="color: rebeccapurple;" href="/game/@game.Id">@game.Name</a></h5>
+                            <h5 class="fs-4"> <a style="color:  rgb(154, 55, 253);" href="/game/@game.Id">@game.Name</a></h5>
                             @foreach (var g in game.Genre)
                             {
                                 <p style="display: inline-block;" class="me-2">@g.Name </p>
@@ -51,7 +51,7 @@ else
                     <div class="card cardHover mb-3" style="width: 18rem; height: 18rem;">
                         <img src="@game.Image" alt="@game.Name" class="card-img-top border border-3" style="height: 10rem;">
                         <div class="card-body">
-                            <h5><a style="color: rebeccapurple;" href="/game/@game.Id">@game.Name</a></h5>
+                            <h5 class="fs-4"><a style="color:  rgb(154, 55, 253);" href="/game/@game.Id">@game.Name</a></h5>
                             @foreach (var g in game.Genre)
                             {
                                 <p style="display: inline-block;" class="me-2">@g.Name </p>
@@ -66,11 +66,11 @@ else
 <div class="text-center mb-5 mt-3">
     @if (nextPage != null || SearchGame?.Next != null)
     {
-        <button class="btn-lg button" @onclick="LoadMore">Load More</button>
+        <button class="btn button" @onclick="LoadMore">Load More</button>
     }
     @if (SearchGame != null)
     {
-        <button @onclick="ScrollToTop" class="btn-lg button ms-3">Back to the Top</button>
+        <button @onclick="ScrollToTop" class="btn button ms-3">Back to the Top</button>
     }
 </div>
 
@@ -91,7 +91,7 @@ else
         if (res.IsSuccessStatusCode)
         {
             SearchGame = await res.Content.ReadFromJsonAsync<Games>();
-            Console.WriteLine($"API Response: {await res.Content.ReadAsStringAsync()}");
+            nextPage = SearchGame?.Next;
         }
         else
         {

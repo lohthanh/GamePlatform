@@ -13,15 +13,14 @@
         <div class="top-row px-4 d-flex justify-content-between">
             <div class="searchDiv">
                 <input class="w-75 input" type="text" @bind="searchResults">
-                <button @onclick="FetchData" class="button">Search</button>
+                <button @onclick="FetchData" class="button searchBtn ms-2">Search</button>
             </div>
-            About
         </div>
-
         <article class="content px-4">
             @Body
         </article>
     </main>
+
 </div>
 
 
@@ -33,6 +32,14 @@
     {
         var searchQuery = Uri.EscapeDataString(this.searchResults ?? "");
         NavigationManager.NavigateTo($"/game/search-results/{searchQuery}");
+    }
+
+    private async Task HandleKeyPress(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            await FetchData();
+        }
     }
 
 }
