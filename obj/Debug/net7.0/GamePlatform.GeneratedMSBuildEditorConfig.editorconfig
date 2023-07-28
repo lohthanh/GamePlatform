@@ -1,0 +1,117 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GamePlatform
+build_property.RootNamespace = GamePlatform
+build_property.ProjectDir = c:\Users\lohth\OneDrive\Desktop\GamePlatformApp\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\lohth\OneDrive\Desktop\GamePlatformApp
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Details/SearchResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlsc1xTZWFyY2hSZXN1bHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Details/ViewOne.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlsc1xWaWV3T25lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Genres/Action.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXEFjdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Genres/Adventure.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXEFkdmVudHVyZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Genres/Puzzle.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXFB1enpsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Genres/Racing.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXFJhY2luZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Genres/RPG.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXFJQRy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Genres/Shooter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXFNob290ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Genres/Sports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXFNwb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Genres/Strategy.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXFN0cmF0ZWd5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Platforms/NintendoSwitch.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhdGZvcm1zXE5pbnRlbmRvU3dpdGNoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Platforms/PC.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhdGZvcm1zXFBDLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Platforms/Playstation4.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhdGZvcm1zXFBsYXlzdGF0aW9uNC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Platforms/XboxOne.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhdGZvcm1zXFhib3hPbmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Top/AllTime.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9wXEFsbFRpbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Top/BestOfTheYear.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9wXEJlc3RPZlRoZVllYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Top/MostPopular.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9wXE1vc3RQb3B1bGFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-g7tc52f24v
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-v8loa0p2ex
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lohth/OneDrive/Desktop/GamePlatformApp/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
